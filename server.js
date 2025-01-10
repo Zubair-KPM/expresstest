@@ -1,16 +1,16 @@
-// Import the express module
+// Import express module
 const express = require('express');
 
-// Create an instance of the express application
+// Create express app
 const app = express();
 
-// Define a route for the root URL
+// Define a route for the root path
 app.get('/', (req, res) => {
   res.send('You are successfully tested');
 });
 
-// Define the port for the server to listen on
-const port = 3000;
+// Define a port for the server to listen on
+const port = process.env.PORT || 3000; // Vercel automatically provides this value
 
 // Start the server
 app.listen(port, () => {
