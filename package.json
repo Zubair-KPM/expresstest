@@ -11,6 +11,6 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2",
-    "vercel": "^39.2.6"
+    "vercel": "^41.7.6"
   }
 }
